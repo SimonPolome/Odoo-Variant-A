@@ -1,0 +1,27 @@
+// Custom Code
+$spacer: 20px;
+
+.card{
+    max-width: 600px;
+}
+
+// Import functions and variables
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+// Custom Colors
+$custom-theme-colors: (
+  "white": #fff,
+  "whitegray": #dadee3,
+  "gray": #626a71,
+  "link": #453a65,
+  "dark": #2d3336
+);
+$custom-spacers: (
+  23: $spacer * .75
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+$spacers: map-merge($custom-spacers, $spacers);
+
+// Import Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
